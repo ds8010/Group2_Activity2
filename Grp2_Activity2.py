@@ -120,7 +120,7 @@ def main():
                 else:
                     print("Input Error!")
         elif op==2: # "Other currencies to AED" option
-            while True: # This nested while loop helps repeat the "AED to other currencies" option based on user's choices with no need to go back to the main menu.
+            while True: # This nested while loop helps repeat the "Other currencies to AED" option based on user's choices with no need to go back to the main menu.
                     print("Sno. \tConversion method       \tConversion Rate ")
                     print("********************************************************")
                     print("1    \tEuro (EUR) to AED            \t",eur_aed)
