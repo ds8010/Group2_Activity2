@@ -2,7 +2,10 @@
 Group 2
 Authors:
        1.
-       2.
+       
+       2.hamad alsaadi 
+       contributed by writing the constants (converesion rates), and the functions for each conversion
+       
        3.Yosef Shibele
            Contributed on the main.
 Manifesto :This Program is written to act like a currency converter.
