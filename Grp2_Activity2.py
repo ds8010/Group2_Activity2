@@ -139,7 +139,8 @@ def main():
                     print("AED to other currencies converter is closed!")
                     break
                 else:
-                    print("Input Error!")
+                    print("Input Error! Try again!")
+                    input("Press Enter to go back!")
 
         elif op==2: # "Other currencies to AED" option
             while True: # This nested while loop helps repeat the "Other currencies to AED" option based on user's choices with no need to go back to the main menu.
@@ -198,7 +199,7 @@ def main():
                         break
                     else:
                         print("Input Error! Try again.")
-                        continue
+                        input("Press Enter to go back!")
 
         elif op==3: # Exits the whole program
             print("Currency converter is closed!")
@@ -206,6 +207,7 @@ def main():
 
         else:
             print("Input Error! Try again.")
+            input("Press Enter to go back!")
             continue
 
         a = int(input('Do you want to go back to the first menu? Enter 1 if Yes, 0 if No: '))
