@@ -100,10 +100,12 @@ def main():
                     print("You are now converting from AED to Euros")
                     amount=float(input("Enter your amount:"))
                     if amount < 0:
-                        print("Input Error! Amount should be positive number. " ) 
+                        print("Input Error! Amount should be positive number. " )
+                        input("Press Enter to go back!") 
                         continue
                     elif amount >=0:
                         aed_to_euro(amount)
+                        input("Press Enter to continue conversion!")
                     else:
                         print('Input Error! Try again! ')
                         continue  
@@ -111,10 +113,12 @@ def main():
                     print("You are now converting from AED to British Pounds")
                     amount=float(input("Enter your amount:"))
                     if amount < 0:
-                        print("Input Error! Amount should be positive number. " ) 
+                        print("Input Error! Amount should be positive number. " )
+                        input("Press Enter to go back!") 
                         continue
                     elif amount >=0:
                         aed_to_britishpound(amount)
+                        input("Press Enter to continue conversion!")
                     else:
                         print('Input Error! Try again!')
                         continue
@@ -122,10 +126,12 @@ def main():
                     print("You are now converting from AED to US Dollars")
                     amount=float(input("Enter your amount:"))
                     if amount < 0:
-                        print("Input Error! Amount should be positive number. " ) 
+                        print("Input Error! Amount should be positive number. " )
+                        input("Press Enter to go back!") 
                         continue
                     elif amount >=0:
                         aed_to_dollar(amount)
+                        input("Press Enter to continue conversion!")
                     else:
                         print('Input Error! Try again!')
                         continue
@@ -151,10 +157,12 @@ def main():
                         print("You are now converting from Euros to AED")
                         amount=float(input("Enter your amount:"))
                         if amount < 0:
-                            print("Input Error! Amount should be positive number. " ) 
+                            print("Input Error! Amount should be positive number. " )
+                            input("Press Enter to go back!") 
                             continue
                         elif amount >=0:
                             eur_to_aed(amount)
+                            input("Press Enter to continue conversion!")
                         else:
                             print('Input Error! Try again!')
                             continue
@@ -162,10 +170,12 @@ def main():
                         print("You are now converting from British Pounds to AED")
                         amount=float(input("Enter your amount:"))
                         if amount < 0:
-                            print("Input Error! Amount should be positive number. " ) 
+                            print("Input Error! Amount should be positive number. " )
+                            input("Press Enter to go back!") 
                             continue
                         elif amount >=0:
                             britishpound_to_aed(amount)
+                            input("Press Enter to continue conversion!")
                         else:
                             print('Input Error! Try again!')
                             continue
@@ -175,9 +185,11 @@ def main():
                         amount=float(input("Enter your amount:"))
                         if amount < 0:
                             print("Input Error! Amount should be positive number. " ) 
+                            input("Press Enter to go back!")
                             continue
                         elif amount >=0:
                             dollar_to_aed(amount)
+                            input("Press Enter to continue conversion!")
                         else:
                             print('Input Error! Try again!')
                             continue
@@ -195,7 +207,7 @@ def main():
         else:
             print("Input Error! Try again.")
             continue
-        
+
         a = int(input('Do you want to go back to the first menu? Enter 1 if Yes, 0 if No: '))
         if a==1:
              continue
