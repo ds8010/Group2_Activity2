@@ -83,8 +83,8 @@ def main():
 3. Exit
 **************************
             ''')
-        op=int(input("Enter your choice (1/2/3):"))
-        if op==1:# AED to Other currencies option
+        op=input("Enter your choice (1/2/3):")
+        if op=='1':# AED to Other currencies option
             while True: # This nested while loop helps repeat the "AED to other currencies" option based on user's choices with no need to go back to the main menu.
                 print("Sno. \tConversion method       \tConversion Rate ")
                 print("********************************************************")
@@ -94,9 +94,9 @@ def main():
                 print("********************************************************")
                 print("4    \tExit ")
                 print("********************************************************")
-                choice= int(input("Enter your choice (1/2/3/4):"))
+                choice= input("Enter your choice (1/2/3/4):")
 
-                if choice==1: #Change from AED to Euros
+                if choice=='1': #Change from AED to Euros
                     print("You are now converting from AED to Euros")
                     amount=float(input("Enter your amount:"))
                     if amount < 0:
@@ -109,7 +109,7 @@ def main():
                     else:
                         print('Input Error! Try again! ')
                         continue  
-                elif choice==2: # Change from AED to BritishPound
+                elif choice=='2': # Change from AED to BritishPound
                     print("You are now converting from AED to British Pounds")
                     amount=float(input("Enter your amount:"))
                     if amount < 0:
@@ -122,7 +122,7 @@ def main():
                     else:
                         print('Input Error! Try again!')
                         continue
-                elif choice==3:# Change from AED to Dollars
+                elif choice=='3':# Change from AED to Dollars
                     print("You are now converting from AED to US Dollars")
                     amount=float(input("Enter your amount:"))
                     if amount < 0:
@@ -135,14 +135,14 @@ def main():
                     else:
                         print('Input Error! Try again!')
                         continue
-                elif choice==4: # Exits the "AED to Other currencies" option
+                elif choice=='4': # Exits the "AED to Other currencies" option
                     print("AED to other currencies converter is closed!")
                     break
                 else:
                     print("Input Error! Try again!")
                     input("Press Enter to go back!")
 
-        elif op==2: # "Other currencies to AED" option
+        elif op=='2': # "Other currencies to AED" option
             while True: # This nested while loop helps repeat the "Other currencies to AED" option based on user's choices with no need to go back to the main menu.
                     print("Sno. \tConversion method       \tConversion Rate ")
                     print("********************************************************")
@@ -152,9 +152,9 @@ def main():
                     print("********************************************************")
                     print("4    \tExit ")
                     print("********************************************************")
-                    select= int(input("Enter your choice (1/2/3/4):"))
+                    select= input("Enter your choice (1/2/3/4):")
 
-                    if select==1: #Change from Euro to AED
+                    if select=='1': #Change from Euro to AED
                         print("You are now converting from Euros to AED")
                         amount=float(input("Enter your amount:"))
                         if amount < 0:
@@ -167,7 +167,7 @@ def main():
                         else:
                             print('Input Error! Try again!')
                             continue
-                    elif select==2: # Change from BrPound to AED 
+                    elif select=='2': # Change from BrPound to AED 
                         print("You are now converting from British Pounds to AED")
                         amount=float(input("Enter your amount:"))
                         if amount < 0:
@@ -181,7 +181,7 @@ def main():
                             print('Input Error! Try again!')
                             continue
 
-                    elif select==3: # Change from Dollar to AED
+                    elif select=='3': # Change from Dollar to AED
                         print("You are now converting from US Dollars to AED")
                         amount=float(input("Enter your amount:"))
                         if amount < 0:
@@ -194,14 +194,14 @@ def main():
                         else:
                             print('Input Error! Try again!')
                             continue
-                    elif select==4:   # Exit the 'Other currencies to AED' option
+                    elif select=='4':   # Exit the 'Other currencies to AED' option
                         print("Other currencies to AED converter is closed!")
                         break
                     else:
                         print("Input Error! Try again.")
                         input("Press Enter to go back!")
 
-        elif op==3: # Exits the whole program
+        elif op=='3': # Exits the whole program
             print("Currency converter is closed!")
             break
 
@@ -210,10 +210,10 @@ def main():
             input("Press Enter to go back!")
             continue
 
-        a = int(input('Do you want to go back to the first menu? Enter 1 if Yes, 0 if No: '))
-        if a==1:
+        a = input('Do you want to go back to the first menu? Enter 1 if Yes, 0 if No: ')
+        if a=='1':
              continue
-        elif a==0:
+        elif a=='0':
              print("Currency converter is closed!")
              break
         else:
